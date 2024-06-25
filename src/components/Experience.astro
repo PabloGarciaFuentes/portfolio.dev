@@ -1,0 +1,51 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        title: 'Desarrollador Web FullStack - Hiniestic',
+        category: 'CATEGORY 1',
+        date: 'Actualmente ...',
+        description: 'Desarrollo de aplicaciones web tanto en el lado del cliente (front-end) como en el lado del servidor (back-end). Manejando todas las etapas del desarrollo web, desde la concepción del diseño hasta la implementación y mantenimiento de sistemas web completos.',
+        link: 'https://www.google.com'
+    },
+    {
+        title: 'Ingeniero Logístico - Cayco',
+        category: 'CATEGORY 2',
+        date: 'Julio 2019',
+        description: 'Experiencia en la planificación, implementación y optimización de sistemas de logística y cadena de suministro. Supervisando todas las etapas del proceso logístico, desde la adquisición de materiales hasta la entrega final del producto, asegurando eficiencia y efectividad en cada paso.',
+        link: 'https://www.google.com'
+    },
+    {
+        title: 'Woke master cleanse drinking vinegar salvia',
+        category: 'CATEGORY 3',
+        date: 'Agosto 2019',
+        description: 'Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.',
+        link: 'https://www.google.com'
+    }
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCE.map(experience => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>  
+        ))
+    }
+</ol>
+
+<!-- <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container py-6 mx-auto">
+      <div class="-my-8 divide-y-2 divide-gray-100">
+        {
+            EXPERIENCE.map(experience => (
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <ExperienceItem {...experience} />
+                </div>  
+            ))
+        }
+      </div>
+    </div>
+  </section> -->
