@@ -1,11 +1,18 @@
-<header class="flex justify-center items-center py-5 w-[1120px] mx-auto">
+<header class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto">
     <span></span>
 
     <nav class="flex flex-row gap-x-10 opacity-80">
         <a href="#top">Inicio</a>
         <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#proyectos" class="disabled">Proyectos</a>
+        <a href="#sobre-mi" class="disabled">Sobre mí</a>
+        <a href="mailto:pablogarciafuentes0@gmail.com">Contacto</a>
     </nav>
 </header>
+
+<style>
+    .disabled {
+      pointer-events: none;
+      color: gray;
+    }
+</style>
