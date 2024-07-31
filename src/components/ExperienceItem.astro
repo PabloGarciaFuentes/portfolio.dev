@@ -8,53 +8,9 @@ interface Props {
 }
 const {title, category, date, description, link} = Astro.props;
 ---
-<!-- <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-  <span class="font-semibold title-font text-gray-700">{category}</span>
-  <span class="mt-1 text-gray-500 text-sm">{date}</span>
-</div>
-<div class="md:flex-grow">
-  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
-    {title}
-  </h2>
-  <p class="leading-relaxed">
-    {description}
-  </p> -->
-  <div class="absolute size-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-  </div>
-  <time class="mb-1 text-sm font-normal leading-none text-sky-200/80">
-    {date}
-  </time>
-  <h3 class="text-lg font-semibold text-yellow-200 mt-2">
-    {title}
-  </h3>
-  <p class="mb-4 text-base font-normal text-gray-200 text-pretty">
-    {description}
-  </p>
-  {
-    link && (
-      <a 
-        href={link} 
-        class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg 
-          hover:bg-gray-200 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 
-          focus:text-blue-700 dark:bg-gary-800 dark:text-gary-400 dark:border-gray-600 dark:hover:text-white 
-          dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-        Saber más ... {""}
-        <svg
-          class="size-3 ms-2 rtl:rotate-180"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
-        >
-          <path 
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M2 5h9M7 1l4 4-4 4"
-          />
-        </svg>
-      </a>
-    )
-  }
+
+<div class="border-t border-gray-700 pt-10 pb-10">
+  <p class="mb-2"><span class="text-green-500">>_</span> {date}</p>
+  <p class="mb-2"><span class="text-green-500">>_</span> {title}</p>
+  <p class="mb-2"><span class="text-green-500">>_</span> {description}</p>
 </div>

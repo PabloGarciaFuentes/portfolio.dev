@@ -16,13 +16,15 @@ import BriefCase from "../components/icons/BriefCase.astro";
 	description="Contrata a Pablo García, un desarrollador web fullstack con más de 4 años de experiencia. Especializado en crear aplicaciones únicas."
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-20">
-      <img
+    <SectionContainer class="py-44 pb-0">
+      <!-- <img
         class="rounded-full size-12 mb-4"
         src="https://media.licdn.com/dms/image/C5103AQEwVe3AR63LoQ/profile-displayphoto-shrink_800_800/0/1517455649718?e=1724284800&v=beta&t=up6CZVQ1ZChQvJCBBcrIaHRnrlECxahD4MJUlncF1uc"
         alt="Pablo G.photo"
-      />
-      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+      /> -->
+      
+      <!-- **************** PRESENTACIÓN **************** -->
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
         Hola, soy Pablo García <a
           href="https://www.linkedin.com/in/pablo-garcia-fuentes-0b075a125/"
           target="_blank"
@@ -31,16 +33,32 @@ import BriefCase from "../components/icons/BriefCase.astro";
           ><Badge>Trabajando actualmente</Badge></a
         >
       </h1>
-      <h2 class="text-xl lg:text-2xl text-wrap max-w-[500px]">
-        <span>+4 años de experiencia. </span><span class="text-yellow-200/90"
-          >Desarrollador Web Fullstack.
-        </span>
-        <span class="text-red-200/90">De Cádiz, España. </span><span
-          class="opacity-75">Cada aplicación y sitio web que desarrollo es el resultado de una estrecha colaboración con el cliente, entendiendo sus necesidades y objetivos para crear soluciones personalizadas que superen sus expectativas.</span
-        >
-      </h2>
 
-      <nav class="flex gap-4 mt-8 flex-wrap">
+      <div class=" text-green-400 font-mono min-h-[70vh] flex items-center justify-center shadow-lg transform transition duration-500 hover:scale-105 pb-3">
+        <div class="bg-gray-800 border border-gray-700 rounded-lg p-4 w-full max-w-md shadow-lg transform transition duration-500 hover:scale-105">
+          <div class="flex items-center mb-2">
+            <div class="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+            <div class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+          </div>
+          <div class="border-t border-gray-700 pt-2 pb-5">
+            <p class="mb-1"> +4 años de experiencia</p>
+            <p class="mb-1"><span class="text-green-500">.</span> Desarrollador FullStack</p>
+            <p class="mb-1"><span class="text-green-500">.</span> De Cádiz, España</p>
+            <!-- <p class="mb-1"><span class="text-green-500">.</span> Teléfono: 123-456-7890</p> -->
+            <p class="mb-1"><span class="text-green-500">.</span> Email: pablogarciafuentes0@gmail.com</p>
+          </div>
+          <div class="border-t border-gray-700 pt-5">
+            <p class="mb-1"> Cada aplicación y sitio web que desarrollo es el resultado de una estrecha colaboración con el cliente, entendiendo sus necesidades y objetivos para crear soluciones personalizadas que superen sus expectativas.</p>
+          </div>
+        </div>
+      </div>
+      <!-- **************** END PRESENTACIÓN **************** -->
+
+
+    
+      <!-- **************** CONTACTO **************** -->
+      <nav class="flex gap-4 flex-wrap justify-center min-h-[35vh]">
         <SocialPill
           href="https://www.linkedin.com/in/pablo-garcia-fuentes-0b075a125/"
         >
@@ -53,20 +71,32 @@ import BriefCase from "../components/icons/BriefCase.astro";
           <GitHubIcon class="size-4 md:size-6" />
           GitHub
         </SocialPill>
-		    <SocialPill
+        <SocialPill
           href="mailto:pablogarciafuentes0@gmail.com"
         >
           <MailIcon class="size-4 md:size-6" />
           pablogarciafuentes0@gmail.com
         </SocialPill>
       </nav>
+      <!-- **************** END CONTACTO **************** -->
+
+
+
+      <!-- **************** HABILIDADES **************** -->
+
+      <!-- **************** END HABILIDADES **************** -->
+
+
+
+
+      <!-- **************** PROYECTOS **************** -->
+
+      <!-- **************** END PROYECTOS **************** -->
+
+
     </SectionContainer>
 
-	<SectionContainer id="experiencia">
-		<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
-			<BriefCase class="size-7"/>
-			Experiencia laboral
-		</h2>
+	<SectionContainer id="experiencia" class="shadow-lg transform transition duration-500 hover:scale-105 pb-10">
 		<Experience />
 	</SectionContainer>
   </main>

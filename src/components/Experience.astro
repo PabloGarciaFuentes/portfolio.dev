@@ -1,40 +1,75 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
+import ExperienceItem from "./ExperienceItem.astro";
 
 const EXPERIENCE = [
-    {
-        title: 'Desarrollador Web FullStack - Hiniestic',
-        category: 'CATEGORY 1',
-        date: 'Actualmente ...',
-        description: 'Desarrollo de aplicaciones web tanto en el lado del cliente (front-end) como en el lado del servidor (back-end). Manejando todas las etapas del desarrollo web, desde la concepción del diseño hasta la implementación y mantenimiento de sistemas web completos. Tecnologías y lenguajes: HTML5, CSS3, PHP, Symfony, JavaScript, React, Node.js, Express, MongoDB, MySQL, Git, GitHub, etc. ',
-        // link: 'https://www.google.com'
-    },
-    {
-        title: 'Responsable Departamento Logística - Sunitec Hispania S.L.',
-        category: 'CATEGORY 2',
-        date: 'Junio 2019',
-        description: 'Experiencia en la planificación, implementación y optimización de sistemas de logística y cadena de suministro. Supervisando todas las etapas del proceso logístico, desde la adquisición de materiales hasta la entrega final del producto, asegurando eficiencia y efectividad en cada paso.',
-        // link: 'https://www.google.com'
-    },
-    {
-        title: 'Coordinador Logístico - Cayco',
-        category: 'CATEGORY 3',
-        date: 'Septiembre 2016',
-        description: 'Experiencia en la planificación, implementación y optimización de sistemas de logística y cadena de suministro. Supervisando todas las etapas del proceso logístico, desde la adquisición de materiales hasta la entrega final del producto, asegurando eficiencia y efectividad en cada paso.',
-        // link: 'https://www.google.com'
-    }
-]
+  {
+    title: "Desarrollador Web FullStack - Hiniestic",
+    category: "CATEGORY 1",
+    date: "Agosto 2020 - Actualidad",
+    description:
+      "Desarrollo de aplicaciones web tanto en el lado del cliente (front-end) como en el lado del servidor (back-end). Manejando todas las etapas del desarrollo web, desde la concepción del diseño hasta la implementación y mantenimiento de sistemas web completos. Tecnologías y lenguajes: HTML5, CSS3, PHP, Symfony, JavaScript, React, Node.js, Express, MongoDB, MySQL, Git, GitHub, etc. ",
+    // link: 'https://www.google.com'
+  },
+  {
+    title: "Responsable Departamento Logística - Sunitec Hispania S.L.",
+    category: "CATEGORY 2",
+    date: "Junio 2019 - Septiembre 2019",
+    description:
+      "Experiencia en la planificación, implementación y optimización de sistemas de logística y cadena de suministro. Supervisando todas las etapas del proceso logístico, desde la adquisición de materiales hasta la entrega final del producto, asegurando eficiencia y efectividad en cada paso.",
+    // link: 'https://www.google.com'
+  },
+  {
+    title: "Coordinador Logístico - Cayco",
+    category: "CATEGORY 3",
+    date: "Septiembre 2016 - Junio 2019",
+    description:
+      "Experiencia en la planificación, implementación y optimización de sistemas de logística y cadena de suministro. Supervisando todas las etapas del proceso logístico, desde la adquisición de materiales hasta la entrega final del producto, asegurando eficiencia y efectividad en cada paso.",
+    // link: 'https://www.google.com'
+  },
+];
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
-    {
-        EXPERIENCE.map(experience => (
-            <li class="mb-10 ms-4">
-                <ExperienceItem {...experience} />
-            </li>  
-        ))
+<!-- **************** EXPERIENCIA **************** -->
+<style>
+    .bg-gradient {
+      background: linear-gradient(to top, #1f2937 0%, #ffffff 100%);
     }
-</ol>
+  </style>
+<div
+  class=" text-green-400 font-mono min-h-screen flex items-center justify-center"
+>
+  <div
+    class="bg-gray-800 border border-gray-700 rounded-lg p-6 w-full max-w-[35rem] shadow-xl relative transform transition duration-500 hover:scale-105"
+  >
+  <div class="flex items-center mb-2">
+    <div class="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+    <div class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+  </div>
+    <div class="border-t border-gray-700 pt-5 pb-5">
+      <h1 class="text-yellow-500 text-center text-xl font-bold tracking-wide">
+        User Experience
+      </h1>
+    </div>
+
+    {
+      EXPERIENCE.map((experience) => (
+          <ExperienceItem {...experience} />
+      ))
+    }
+  </div>
+</div>
+<!-- **************** END EXPERIENCIA **************** -->
+
+<!-- <ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol> -->
 
 <!-- <section class="text-gray-600 body-font overflow-hidden">
     <div class="container py-6 mx-auto">
