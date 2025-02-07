@@ -1,21 +1,41 @@
 
 ---
-import BurgerMenu from './BurgerMenu.jsx';
 let menuOpen = false;
 
-function handleToggle(open) {
-    menuOpen = open;
+function handleToggle() {
+    menuOpen = !menuOpen;
+    console.log(menuOpen);
 }
 ---
-
-<header class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto">
-    <!-- <BurgerMenu on:toggle={handleToggle} /> -->
-    <nav class="flex flex-row gap-x-10 opacity-80">
+<!-- El código comentado abajo sirve para mostrar un menú hamburguesa, pero no funciona al hacerle click. -->
+<!-- <header class="flex justify-between xl:justify-center items-center py-5 w-full xl:w-[1120px] mx-auto px-4">
+    <div class="flex items-center">
+        <button class="block xl:hidden" onClick={handleToggle}>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+    <nav class={`flex-col xl:flex-row gap-x-10 opacity-80 ${menuOpen ? 'flex' : 'hidden'} xl:flex`}>
         <a href="#top">Inicio</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#proyectos" class="disabled">Proyectos</a>
         <a href="#sobre-mi" class="disabled">Sobre mí</a>
         <a href="mailto:pablogarciafuentes0@gmail.com">Contacto</a>
+    </nav>
+</header> -->
+
+<header class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto">
+    <nav class="flex flex-row gap-x-4 xl:gap-x-10 opacity-80">
+        <a href="#top" class="inline-block">Inicio</a>
+        <!-- <span class="inline-block mx-0">|</span> -->
+        <a href="#experiencia" class="inline-block">Experiencia</a>
+        <!-- <span class="inline-block mx-2">|</span> -->
+        <a href="#proyectos" class="inline-block disabled">Proyectos</a>
+        <!-- <span class="inline-block mx-2">|</span> -->
+        <a href="#sobre-mi" class="inline-block disabled">Sobre mí</a>
+        <!-- <span class="inline-block mx-2">|</span> -->
+        <a href="mailto:pablogarciafuentes0@gmail.com" class="inline-block">Contacto</a>
     </nav>
 </header>
 
